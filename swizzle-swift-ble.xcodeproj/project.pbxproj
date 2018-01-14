@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B648D3E1FF061CA0051203A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B648D3D1FF061C90051203A /* CoreBluetooth.framework */; };
+		5B648D401FF066A50051203A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B648D3F1FF066A50051203A /* Foundation.framework */; };
+		5BE8E2651FF00E57005CFDB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8E2641FF00E57005CFDB5 /* AppDelegate.swift */; };
+		5BE8E2671FF00E57005CFDB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE8E2661FF00E57005CFDB5 /* Assets.xcassets */; };
+		5BE8E26A1FF00E57005CFDB5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE8E2681FF00E57005CFDB5 /* MainMenu.xib */; };
+		5BE8E2761FF00E57005CFDB5 /* swizzle_swift_bleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8E2751FF00E57005CFDB5 /* swizzle_swift_bleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BE8E2721FF00E57005CFDB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BE8E2591FF00E57005CFDB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BE8E2601FF00E57005CFDB5;
+			remoteInfo = "swizzle-swift-ble";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B648D381FF060D70051203A /* CBXpcConnection+Swizzled.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CBXpcConnection+Swizzled.m"; sourceTree = "<group>"; };
+		5B648D3B1FF061290051203A /* CBXpcConnection+Swizzled.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBXpcConnection+Swizzled.h"; sourceTree = "<group>"; };
+		5B648D3D1FF061C90051203A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		5B648D3F1FF066A50051203A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B6AA12B1FF1A4AA00169540 /* swizzle-swift-ble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "swizzle-swift-ble.entitlements"; sourceTree = "<group>"; };
+		5BE8E2611FF00E57005CFDB5 /* swizzle-swift-ble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swizzle-swift-ble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE8E2641FF00E57005CFDB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BE8E2661FF00E57005CFDB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BE8E2691FF00E57005CFDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5BE8E26B1FF00E57005CFDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE8E26C1FF00E57005CFDB5 /* swizzle_swift_ble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swizzle_swift_ble.entitlements; sourceTree = "<group>"; };
+		5BE8E2711FF00E57005CFDB5 /* swizzle-swift-bleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swizzle-swift-bleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE8E2751FF00E57005CFDB5 /* swizzle_swift_bleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swizzle_swift_bleTests.swift; sourceTree = "<group>"; };
+		5BE8E2771FF00E57005CFDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE8E2821FF01101005CFDB5 /* swizzle-swift-ble-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swizzle-swift-ble-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BE8E25E1FF00E57005CFDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B648D401FF066A50051203A /* Foundation.framework in Frameworks */,
+				5B648D3E1FF061CA0051203A /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE8E26E1FF00E57005CFDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B648D3C1FF061C90051203A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B648D3F1FF066A50051203A /* Foundation.framework */,
+				5B648D3D1FF061C90051203A /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BE8E2581FF00E57005CFDB5 = {
+			isa = PBXGroup;
+			children = (
+				5BE8E2631FF00E57005CFDB5 /* swizzle-swift-ble */,
+				5BE8E2741FF00E57005CFDB5 /* swizzle-swift-bleTests */,
+				5BE8E2621FF00E57005CFDB5 /* Products */,
+				5B648D3C1FF061C90051203A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5BE8E2621FF00E57005CFDB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BE8E2611FF00E57005CFDB5 /* swizzle-swift-ble.app */,
+				5BE8E2711FF00E57005CFDB5 /* swizzle-swift-bleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BE8E2631FF00E57005CFDB5 /* swizzle-swift-ble */ = {
+			isa = PBXGroup;
+			children = (
+				5B6AA12B1FF1A4AA00169540 /* swizzle-swift-ble.entitlements */,
+				5BE8E2641FF00E57005CFDB5 /* AppDelegate.swift */,
+				5B648D381FF060D70051203A /* CBXpcConnection+Swizzled.m */,
+				5B648D3B1FF061290051203A /* CBXpcConnection+Swizzled.h */,
+				5BE8E2661FF00E57005CFDB5 /* Assets.xcassets */,
+				5BE8E2681FF00E57005CFDB5 /* MainMenu.xib */,
+				5BE8E26B1FF00E57005CFDB5 /* Info.plist */,
+				5BE8E26C1FF00E57005CFDB5 /* swizzle_swift_ble.entitlements */,
+				5BE8E2821FF01101005CFDB5 /* swizzle-swift-ble-Bridging-Header.h */,
+			);
+			path = "swizzle-swift-ble";
+			sourceTree = "<group>";
+		};
+		5BE8E2741FF00E57005CFDB5 /* swizzle-swift-bleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BE8E2751FF00E57005CFDB5 /* swizzle_swift_bleTests.swift */,
+				5BE8E2771FF00E57005CFDB5 /* Info.plist */,
+			);
+			path = "swizzle-swift-bleTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BE8E2601FF00E57005CFDB5 /* swizzle-swift-ble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE8E27A1FF00E57005CFDB5 /* Build configuration list for PBXNativeTarget "swizzle-swift-ble" */;
+			buildPhases = (
+				5BE8E25D1FF00E57005CFDB5 /* Sources */,
+				5BE8E25E1FF00E57005CFDB5 /* Frameworks */,
+				5BE8E25F1FF00E57005CFDB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swizzle-swift-ble";
+			productName = "swizzle-swift-ble";
+			productReference = 5BE8E2611FF00E57005CFDB5 /* swizzle-swift-ble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BE8E2701FF00E57005CFDB5 /* swizzle-swift-bleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE8E27D1FF00E57005CFDB5 /* Build configuration list for PBXNativeTarget "swizzle-swift-bleTests" */;
+			buildPhases = (
+				5BE8E26D1FF00E57005CFDB5 /* Sources */,
+				5BE8E26E1FF00E57005CFDB5 /* Frameworks */,
+				5BE8E26F1FF00E57005CFDB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BE8E2731FF00E57005CFDB5 /* PBXTargetDependency */,
+			);
+			name = "swizzle-swift-bleTests";
+			productName = "swizzle-swift-bleTests";
+			productReference = 5BE8E2711FF00E57005CFDB5 /* swizzle-swift-bleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BE8E2591FF00E57005CFDB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = augmentous;
+				TargetAttributes = {
+					5BE8E2601FF00E57005CFDB5 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					5BE8E2701FF00E57005CFDB5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5BE8E2601FF00E57005CFDB5;
+					};
+				};
+			};
+			buildConfigurationList = 5BE8E25C1FF00E57005CFDB5 /* Build configuration list for PBXProject "swizzle-swift-ble" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BE8E2581FF00E57005CFDB5;
+			productRefGroup = 5BE8E2621FF00E57005CFDB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BE8E2601FF00E57005CFDB5 /* swizzle-swift-ble */,
+				5BE8E2701FF00E57005CFDB5 /* swizzle-swift-bleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BE8E25F1FF00E57005CFDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE8E2671FF00E57005CFDB5 /* Assets.xcassets in Resources */,
+				5BE8E26A1FF00E57005CFDB5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE8E26F1FF00E57005CFDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BE8E25D1FF00E57005CFDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE8E2651FF00E57005CFDB5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE8E26D1FF00E57005CFDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE8E2761FF00E57005CFDB5 /* swizzle_swift_bleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BE8E2731FF00E57005CFDB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BE8E2601FF00E57005CFDB5 /* swizzle-swift-ble */;
+			targetProxy = 5BE8E2721FF00E57005CFDB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BE8E2681FF00E57005CFDB5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BE8E2691FF00E57005CFDB5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BE8E2781FF00E57005CFDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BE8E2791FF00E57005CFDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		5BE8E27B1FF00E57005CFDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "swizzle-swift-ble/swizzle-swift-ble.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J97VZ3QA63;
+				INFOPLIST_FILE = "swizzle-swift-ble/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.augmentous.swizzle-swift-ble";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swizzle-swift-ble/swizzle-swift-ble-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		5BE8E27C1FF00E57005CFDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "swizzle-swift-ble/swizzle-swift-ble.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J97VZ3QA63;
+				INFOPLIST_FILE = "swizzle-swift-ble/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.augmentous.swizzle-swift-ble";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swizzle-swift-ble/swizzle-swift-ble-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		5BE8E27E1FF00E57005CFDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J97VZ3QA63;
+				INFOPLIST_FILE = "swizzle-swift-bleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.augmentous.swizzle-swift-bleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swizzle-swift-ble.app/Contents/MacOS/swizzle-swift-ble";
+			};
+			name = Debug;
+		};
+		5BE8E27F1FF00E57005CFDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J97VZ3QA63;
+				INFOPLIST_FILE = "swizzle-swift-bleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.augmentous.swizzle-swift-bleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swizzle-swift-ble.app/Contents/MacOS/swizzle-swift-ble";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BE8E25C1FF00E57005CFDB5 /* Build configuration list for PBXProject "swizzle-swift-ble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE8E2781FF00E57005CFDB5 /* Debug */,
+				5BE8E2791FF00E57005CFDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE8E27A1FF00E57005CFDB5 /* Build configuration list for PBXNativeTarget "swizzle-swift-ble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE8E27B1FF00E57005CFDB5 /* Debug */,
+				5BE8E27C1FF00E57005CFDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE8E27D1FF00E57005CFDB5 /* Build configuration list for PBXNativeTarget "swizzle-swift-bleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE8E27E1FF00E57005CFDB5 /* Debug */,
+				5BE8E27F1FF00E57005CFDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BE8E2591FF00E57005CFDB5 /* Project object */;
+}
